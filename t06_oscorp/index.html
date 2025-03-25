@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Online Store - Книги та більше!">
+  <title>Книжковий магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <img src="assets/images/logo.jpg" alt="Logo">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Пошук товарів...">
+      </div>
+    </div>
+    <div id="contact-info">
+      <span>Телефон: (099) 111-11-11</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Продукти</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <div class="breadcrumb">
+    <span><a class="color" href="#">Головна</a> / <a href="#">Каталог</a></span>
+  </div>
+
+  <div class="filters">
+    <h3>Фільтри</h3>
+    <div class="filter-item">
+      <label for="price-range">Ціна:</label>
+      <input type="range" id="price-range" min="0" max="1000" value="0">
+      <label for="category">Категорії:</label>
+      <select id="category">
+        <option value="book">Книги</option>
+        <option value="manga">Манга</option>
+        <option value="comics">Комікси</option>
+      </select>
+      <div class="genre-container">
+        <label id="genres" for="genres">Жанри</label>
+        <label class="genre">
+          Жахи
+          <input type="checkbox" name="genre" value="horror">
+          <span class="checkmark">✓</span>
+        </label>
+      
+        <label class="genre">
+          Трилер
+          <input type="checkbox" name="genre" value="thriller">
+          <span class="checkmark">✓</span>
+        </label>
+      
+        <label class="genre">
+          Фантастика
+          <input type="checkbox" name="genre" value="fiction">
+          <span class="checkmark">✓</span>
+        </label>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="product-list">
+    <div class="product-item h-product">
+      <img src="assets/images/family_game.jpg" alt="Сімейна гра" class="u-photo">
+      <h3><a href="card.html" class="p-name">Сімейна гра</a></h3>
+      <p class="price p-price" content="360">360 грн</p>
+      <p class="availability p-availability" content="InStock">В наявності</p>
+      <button>Купити</button>
+    </div>
+
+    <div class="product-item h-product">
+      <img src="assets/images/they_both_die.png" alt="Вони обидва помруть у кінці" class="u-photo">
+      <h3><a href="card.html" class="p-name">Вони обидва помруть у кінці</a></h3>
+      <p class="price p-price" content="430">430 грн</p>
+      <p class="availability p-availability" content="InStock">В наявності</p>
+      <button>Купити</button>
+    </div>
+
+    <div class="product-item h-product">
+      <img src="assets/images/bunny.jpg" alt="Зайчик" class="u-photo">
+      <h3><a href="card.html" class="p-name">Зайчик</a></h3>
+      <p class="price p-price" content="390">390 грн</p>
+      <p class="availability p-availability" content="OutOfStock">Немає в наявності</p>
+      <button class="unavailable">Купити</button>
+    </div>
+
+    <div class="product-item h-product">
+      <img src="assets/images/butterfly.png" alt="Сад метеликів" class="u-photo">
+      <h3><a href="card.html" class="p-name">Сад метеликів</a></h3>
+      <p class="price p-price" content="190">190 грн</p>
+      <p class="availability p-availability" content="OutOfStock">Немає в наявності</p>
+      <button class="unavailable">Купити</button>
+    </div>
+  </div>
+
+
+  <div class="pagination">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Oscorp. Всі права захищені.</p>
+  </footer>
+
+</body>
+</html>

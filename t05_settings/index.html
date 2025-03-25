@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Settings</h1>
+    <div class="wrapper">
+        <div class="container">
+            <div class="settings-container">
+                <div class="settings-panel">
+                    <label for="typeface">Typeface</label>
+                    <div class="row">                    <div class="typeface"> 
+                        <select>
+                            <option>Helvetica</option>
+                            <option>Roboto</option>
+                            <option>Times New Roman</option>
+                            <option>Comic Sans</option>
+                            <option>Baskerville</option>
+                        </select></div>
+
+                    <div class="toggle-container">
+                        <span>Dark UI</span>
+                        <label class="switch">
+                            <input type="checkbox" id="darkMode">
+                            <span class="slider"></span>
+                        </label>
+                    </div></div>
+
+                    <div class="row1"><div class="none"><label>Weight</label>
+                        <div class="weight-options">
+                            <label class="weight">
+                                <input type="radio" name="weight" value="regular" checked>
+                                <span class="custom-checkbox"></span> Regular
+                            </label>
+                        
+                            <label class="weight">
+                                <input type="radio" name="weight" value="bold">
+                                <span class="custom-checkbox"></span> Bold
+                            </label>
+                        </div></div>
+    
+                        <div class="nit"><label>Color</label>
+                            <div class="color-options">
+                                <label class="color blue">
+                                    <input type="radio" name="color" value="blue">
+                                    <span class="checkmark">✓</span>
+                                </label>
+        
+                                <label class="color green">
+                                    <input type="radio" name="color" value="green" checked>
+                                    <span class="checkmark">✓</span>
+                                </label>
+        
+                                <label class="color pink">
+                                    <input type="radio" name="color" value="pink">
+                                    <span class="checkmark">✓</span>
+                                </label>
+        
+                                <label class="color yellow">
+                                    <input type="radio" name="color" value="yellow">
+                                    <span class="checkmark">✓</span>
+                                </label>
+        
+                                <label class="color orange">
+                                    <input type="radio" name="color" value="orange">
+                                    <span class="checkmark">✓</span>
+                                </label>
+                            </div></div></div>
+                        
+                    <label>Size</label>
+                    <div class="size-slider">
+                        <span id="small-a">A</span>
+                        <input type="range" id="font-size" min="10" max="40" value="10">
+                        <span id="large-a">A</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="side-menu">
+                <img src="assets/images/artistic-brush.png" alt="Brush">
+                <img src="assets/images/user-icon.png" alt="User">
+                <img src="assets/images/sms-speech-bubble.png" alt="Messages">
+                <img src="assets/images/computer-screen.png" alt="Computer">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

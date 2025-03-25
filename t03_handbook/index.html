@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handbook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Handbook</h1>
+  </header>
+  <main>
+    <section class="html">
+      <h2>HTML</h2>
+      <div class="grid">
+        <div class="subtopic">
+          <h3>Paragraphs & Links</h3>
+          <p>&lt;p&gt; creates paragraphs, and &lt;a&gt; creates hyperlinks to other pages or sections.</p>
+          <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="https://www.youtube.com/watch?v=qCxoT_dDmpc"&gt;Click here&lt;/a&gt;</code></pre>
+          <p>This is a paragraph.</p>
+          <a href="https://www.youtube.com/watch?v=qCxoT_dDmpc">Click here</a>
+        </div>
+        <div class="subtopic">
+          <h3>Lists</h3>
+          <p>Lists organize content in bullet points (&lt;ul&gt;) or numbered sequences (&lt;ol&gt;).</p>
+          <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt; 
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+          
+&lt;ol&gt;
+     &lt;li&gt;Step 1&lt;/li&gt;
+     &lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          <ul>
+            <li>Item 1</li> 
+            <li>Item 2</li>
+          </ul>
+          
+          <ol>
+            <li>Step 1</li> 
+            <li>Step 2</li>
+          </ol>   
+        </div>
+        <div class="subtopic">
+          <h3>Tables</h3>
+          <p>&lt;table&gt; organizes data into rows (&lt;tr&gt;) and columns (&lt;td&gt;).</p>
+          <pre><code>&lt;table&gt; 
+     &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+     &lt;/tr&gt;
+ &lt;/table&gt;</code></pre>
+          <table> 
+            <tr>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 2</td>
+            </tr>
+          </table>
+        </div>
+        <div class="subtopic">
+          <h3>Divs & Spans</h3>
+          <p>&lt;div&gt; groups elements, while &lt;span&gt; applies styles within a text.</p>
+          <pre><code>&lt;div class="example"&gt;This is a div&lt;/div&gt;
+&lt;p&gt;This is a &lt;span class="highlight"&gt;highlighted word&lt;/span&gt; in a sentence.&lt;/p&gt;</code></pre>
+            <div class="example">This is a div</div>
+            <p>This is a <span class="highlight">highlighted word</span> in a sentence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="css">
+      <h2>CSS</h2>
+      <div class="grid">
+        <div class="subtopic">
+          <h3>Colors</h3>
+          <p>CSS allows you to apply different colors to elements.</p>
+          <pre><code>h1 {
+    color: rgb(255, 0, 153);
+}</code></pre>
+          <h1 id="examp">This heading is red due to the color property.</h1>
+        </div>
+        <div class="subtopic">
+          <h3>Text Styling</h3>
+          <p>CSS can be used to style text, including font size, family, and weight.</p>
+          <pre><code>p {
+    font-size: 16px;
+    font-weight: bold;
+}</code></pre>
+          <p id="text">This paragraph has a bold font and a font size of 16px.</p>
+        </div>
+        <div class="subtopic">
+          <h3>Transitions</h3>
+          <p>Transitions enable smooth changes between property values.</p>
+          <pre><code>.button {
+     background-color: #8800a0;
+     padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     }
+      
+.button:hover {
+     background-color: #c904ec;
+}</code></pre>
+          <button class="button">Hover over me!</button>
+        </div>
+        <div class="subtopic">
+          <h3>Animations</h3>
+          <p>CSS animations make elements move, fade, or transform in different ways.</p>
+          <pre><code>@keyframes slide {
+    from { 
+      transform: translateX(0);
+     }
+    to { 
+      transform: translateX(100px); 
+    }
+   }
+    .animate {
+      animation: slide 2s;
+    }</code></pre>
+          <div class="animate">I will move to the right due to the animation!</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="protocols">
+      <h2>Protocols</h2>
+      <div class="grid">
+          <div class="subtopic">
+            <h3>HTTP (HyperText Transfer Protocol)</h3>
+            <p>HTTP is a protocol used for transferring hypertext (web pages) over the web. It is the foundation of data communication on the internet.</p>
+            <br>
+            <ul>
+              <li><strong>HTTP Methods:</strong>
+                <ul>
+                  <li><em>GET:</em> Retrieves data from the server.</li>
+        <li><em>POST:</em> Sends data to the server (used for submitting forms).</li>
+        <li><em>PUT:</em> Updates existing resources on the server.</li>
+        <li><em>DELETE:</em> Deletes a specified resource from the server.</li>
+        <li><em>PATCH:</em> Partially updates a resource.</li>
+        <li><em>HEAD:</em> Similar to GET, but retrieves headers only.</li>
+        <li><em>OPTIONS:</em> Describes the communication options for the target resource.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        <div class="subtopic">
+          <h3>HTTPS (HyperText Transfer Protocol Secure)</h3>
+          <p>HTTPS is the secure version of HTTP. It adds a layer of security using SSL/TLS encryption, which protects the data being transferred between the browser and the server.</p>
+          <br>
+        <ul><li><strong>HTTP Response Status Codes:</strong>
+          <ul>
+            <li><em>1xx (Informational):</em> e.g., 100 Continue (The client should proceed).</li>
+            <li><em>2xx (Successful):</em> e.g., 200 OK (Request was successful).</li>
+            <li><em>3xx (Redirection):</em> e.g., 301 Moved Permanently (Resource moved permanently).</li>
+            <li><em>4xx (Client Error):</em> e.g., 404 Not Found (The resource cannot be found).</li>
+            <li><em>5xx (Server Error):</em> e.g., 500 Internal Server Error (Unexpected condition occurred on the server).</li>
+          </ul>
+        </li></ul>
+        </div>
+        <div class="subtopic">
+          <h3>DNS (Domain Name System)</h3>
+          <p>DNS is a system that translates human-readable domain names (e.g., google.com) into IP addresses, which computers use to communicate with each other. DNS records store various types of information about domains.</p>
+          <p>DNS Record Types:</p>
+          <br>
+          <ul>
+            <li><strong>DNS Record Types:</strong>
+              <ul>
+                <li><em>A:</em> Maps a domain to an IPv4 address.</li>
+                <li><em>AAAA:</em> Maps a domain to an IPv6 address.</li>
+                <li><em>CNAME:</em> Alias for a domain, points to another domain.</li>
+                <li><em>MX:</em> Specifies mail servers for email reception.</li>
+                <li><em>TXT:</em> Holds text data, often used for security (SPF, DKIM).</li>
+                <li><em>NS:</em> Defines the authoritative name servers for a domain.</li>
+                <li><em>PTR:</em> Maps an IP address to a domain name (reverse lookup).</li>
+                <li><em>SOA:</em> Specifies domain zone details, like primary name server.</li>
+                <li><em>SRV:</em> Defines locations for services like SIP or LDAP.</li>
+                <li><em>CAA:</em> Specifies which Certificate Authorities can issue certificates for a domain.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="subtopic">
+          <h3> IP (Internet Protocol)</h3><br>
+          <p>IP is responsible for addressing and routing data packets across the internet.</p>
+          <ol>
+            <li><em>Determining an IP Address:</em>
+              <p>To find the IP address of a domain (e.g., google.com or google.com.ua), you can perform a DNS lookup. Use command-line tools like <code>ping</code> or <code>nslookup</code>, or visit online services.</p>
+            </li><br>
+            <li><em>Types of IP Addresses:</em>
+              <ul>
+                <li><em>IPv4:</em> e.g., 192.168.0.1 (4 octets, separated by dots).</li>
+                <li><em>IPv6:</em> e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334 (8 groups of 4 hexadecimal digits, separated by colons).</li>
+              </ul>
+            </li><br>
+            <li><em>How IP Relates to Domains:</em>
+              <p>When you visit <code>google.com</code>, it resolves to an IP address like <code>142.250.190.46</code>. Similarly, <code>google.com.ua</code> may resolve to another address like <code>216.58.213.174</code> or an IPv6 address.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

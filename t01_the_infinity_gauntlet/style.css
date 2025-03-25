@@ -1,0 +1,28 @@
+.gauntlet {
+    width: 100px;
+}
+
+.people {
+    margin-top: 20px;
+}
+
+.man {
+    width: 50px;
+    height: 50px;
+}
+
+.gauntlet:hover ~ .people table tr:nth-child(odd) td:nth-child(odd) img {
+    visibility: hidden;
+}
+
+.gauntlet:hover ~ .people table tr:nth-child(odd) td:nth-child(even) img {
+    visibility: visible;
+}
+
+.gauntlet:hover ~ .people table tr:nth-child(even) td:nth-child(odd) img {
+    visibility: visible;
+}
+
+.gauntlet:hover ~ .people table tr:nth-child(even) td:nth-child(even) img {
+    visibility: hidden;
+}

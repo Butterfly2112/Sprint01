@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    clip-path: circle(50%);
+    position: absolute;
+    animation: moveCircle 4s linear infinite;
+    transition: background-color 2s;
+  }
+  
+  @keyframes moveCircle {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 90%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
+  .circle:hover {
+    background-color: red;
+  }
+  

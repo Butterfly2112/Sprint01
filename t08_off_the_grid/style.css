@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.grid {
+    display: grid;
+    border: 4px solid #000;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px;
+    background-color: #fff;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1367px) {
+    body {
+        font-size: 50px;
+    }
+    .grid {
+        display: grid;
+        width: 60%;
+        height: 90vh;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+
+    .panel1 { 
+        grid-area: 1 / 1 / 4 / 6; 
+        transform: scaleY(0.9) scaleX(0.97) translateY(-2%) translateX(1%);
+    }
+    .panel2 { 
+        grid-area: 1 / 6 / 4 / 12;
+        transform: scaleY(0.9) scaleX(0.97) translateY(-2%) translateX(-0.5%);
+    }
+    .panel3 { 
+        grid-area: 4 / 1 / 6 / 5; 
+        transform:  translateY(-8%) translateX(3%);
+    }
+    .panel4 { 
+        grid-area: 4 / 5 / 6 / 9; 
+        transform:  translateY(-8%) scaleX(0.9) translateX(5%);
+        margin-left: 10px;
+    }
+    .panel5 { 
+        grid-area: 4 / 9 / 6 / 12; 
+        transform: translateY(-8%) translateX(1%) scaleX(0.9);
+    }
+    .panel6 { 
+        grid-area: 6 / 1 / 10 / 3; 
+        transform: translateY(-3%) translateX(5%);
+    }
+    .panel7 { 
+        grid-area: 6 / 3 / 10 / 6; 
+        transform: translateY(-3%) translateX(5%);
+        margin-left: 10px;
+    }
+    .panel8 { 
+        grid-area: 6 / 7 / 10 / 9;
+        transform: scaleX(0.7) translateX(-35%) translateY(-3%);
+    }
+    .panel9 { 
+        grid-area: 6 / 9 / 10 / 12; 
+        transform: scaleX(1.2) translateX(-12%) translateY(-3%);
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1366px) {
+    body {
+        font-size: 20px;
+    }
+    .grid {
+        display: grid;
+        width: 95%;
+        height: auto;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .panel1 { 
+        grid-area: 1 / 1 / 3 / 5; 
+        transform: scaleY(0.5) scaleX(1.1) translateX(1.2%) translateY(-45%); 
+    }
+    .panel2 { 
+        grid-area: 2 / 1 / 3 / 6; 
+        transform: scaleY(1.1) scaleX(1.1) translateX(2%) translateY(8%); 
+    }
+    .panel3 { 
+        grid-area: 3 / 1 / 4 / 5; 
+        transform: translateY(10%) translateX(1%)scaleX(1.1); 
+    }
+    .panel4 { 
+        grid-area: 4 / 1 / 5 / 4; 
+        transform: translateY(2%) translateX(2%) scaleX(1.15); 
+    }
+    .panel5 { 
+        grid-area: 4 / 4 / 5 / 7; 
+        transform: translateY(2%) translateX(4%); 
+    }
+    .panel6 { 
+        grid-area: 5 / 1 / 7 / 3; 
+        transform: translateY(-1%) translateX(-8%); 
+    }
+    .panel7 { 
+        grid-area: 5 / 3 / 7 / 6; 
+        transform: translateY(-1%) scaleX(1.1) translateX(-1%);
+    }
+    .panel8 { 
+        grid-area: 7 / 1 / 9 / 3; 
+        transform: scaleX(0.8) translateX(-23%) translateY(-3%); 
+    }
+    .panel9 { 
+        grid-area: 7 / 3 / 9 / 6; 
+        transform: scaleX(1.2) translateX(-8%) translateY(-3%); 
+    }
+}
+
+@media (max-width: 639px) {
+    .grid {
+        display: grid;
+        width: 95%;
+        height: auto;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .panel1 { 
+        grid-area: 1 / 1 / 2 / 4; 
+        transform: scaleX(1.28) translateY(7%) translateX(9%); 
+    }
+    .panel2 { 
+        grid-area: 2 / 1 / 3 / 5; 
+        transform: scaleX(1.1) translateY(5%) translateX(3%);
+    }
+    .panel3 { 
+        grid-area: 3 / 1 / 4 / 4; 
+        transform: scaleX(1.25) translateX(7.7%) translateY(1%); 
+    }
+    .panel4 { 
+        grid-area: 4 / 1 / 5 / 4; 
+        transform: translateY(-2%) translateX(2%) scaleX(1.1); 
+    }
+    .panel5 { 
+        grid-area: 5 / 1 / 6 / 3; 
+        transform: translateY(-4%) translateX(10%) scaleX(1.3);
+    }
+    .panel6 { 
+        grid-area: 4 / 4 / 6 / 6; 
+        transform: translateY(-1%) translateX(10%); 
+    }
+    .panel7 { 
+        grid-area: 6 / 1 / 8 / 3; 
+        transform: scaleX(1.4) translateX(11%) translateY(-3%); 
+    }
+    .panel8 { 
+        grid-area: 6 / 3 / 8 / 4; 
+        transform: scaleX(1.37) translateX(65%) translateY(-3%); 
+    }
+    .panel9 { 
+        grid-area: 8 / 1 / 10 / 3; 
+        transform: scaleX(1.7) translateX(18%) translateY(-4%); 
+    }
+}
+ 

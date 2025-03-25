@@ -1,0 +1,244 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 50%;
+}
+
+.row1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 48%;
+}
+
+label{
+    margin-top: 20px;
+}
+
+.wrapper {
+    background: #3d4752;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.typeface{
+    float: left;
+    margin-top: -10px;
+} 
+
+.toggle-container {
+    float: right;
+    margin-top: -10px;
+}
+
+.settings-panel {
+    background: #46525f;
+    color: white;
+    padding: 20px;
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(123, 123, 123);
+    gap: 30px;
+}
+
+select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.size-slider {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    gap: 10px;
+}
+
+.size-slider input {
+    flex-grow: 1;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2496f2;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+#small-a {
+  font-size: 10px;
+}
+#large-a {
+  font-size: 40px;
+}
+
+.weight-options {
+    display: flex;
+    gap: 15px;
+}
+
+.weight {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.weight input {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: #303a43;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.custom-checkbox::after {
+    content: "✓";
+    font-size: 16px;
+    font-weight: bold;
+    color: #37bca4;
+    display: none;
+}
+
+.weight input:checked + .custom-checkbox::after {
+    display: block;
+}
+
+
+.color-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.color input {
+    display: none;
+}
+
+.checkmark {
+    display: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.color.blue { background: #4076c2; }
+.color.green { background: #37bca4; }
+.color.pink { background: #dd57d0; }
+.color.yellow { background: #dcd951; }
+.color.orange { background: #de7c58; }
+
+.color input:checked + .checkmark {
+    display: block;
+}
+
+input[type="radio"]:checked + .color {
+    border: 2px solid white;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 15px;
+    background: #303a43;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.side-menu img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-menu img:hover {
+    transform: scale(1.1);
+}
